@@ -215,7 +215,7 @@
     font-size: 14px;
   }
   .about__wrapper {
-    padding: 65px;
+    padding: 35px 0;
     background-color: transparent;
   }
   .about__corner {
@@ -228,8 +228,13 @@
   .about__desc_mobl {
     display: block;
   }
+  .works__title {
+    font-size: 32px;
+    text-align: left;
+  }
   .works__wrapper {
     gap: 56px 56px;
+    margin-top: 20px;
   }
 }
 
@@ -245,6 +250,9 @@
   }
   .about__desc {
     font-size: 14px;
+  }
+  .about__wrapper {
+    padding: 0;
   }
   .works__wrapper {
     grid-template-columns: 1fr;

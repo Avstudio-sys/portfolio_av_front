@@ -26,3 +26,9 @@
   color: var(--color-black);
   margin-top: 8px;
 }
+
+@media screen and (max-width: 768px) {
+  .work__title {
+    margin-top: 16px;
+  }
+}
