@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 import { Button } from '@/shared/ui/Button/Button'
+import { Work } from '@/entities/Work/Work'
 
 export default function Home() {
   return (
@@ -8,11 +9,11 @@ export default function Home() {
       <section className={styles.promo}>
         <div className={`wrapper ${styles.promo__wrapper}`}>
           <div className={styles.promo__box}>
-            <div className={styles.promo__title}>AV</div>
-            <div className={styles.promo__subtitle}>studio</div>
-            <div className={styles.promo__slogan}>
+            <h1 className={styles.promo__title}>AV</h1>
+            <h1 className={styles.promo__subtitle}>studio</h1>
+            <h2 className={styles.promo__slogan}>
               Качество, которое работает на вас
-            </div>
+            </h2>
             <div className={styles.promo__subslogan}>
               Команда профессионалов, специализирующаяся на создании сайтов,
               веб-дизайне, SEO-продвижении и SMM
@@ -20,7 +21,7 @@ export default function Home() {
             <Button className={styles.promo__btn}>Получить консультацию</Button>
           </div>
           <Image
-            src={'/promo/cat_promo.png'}
+            src={'/promo/cat_promo.svg'}
             alt="#"
             width="112"
             height="178"
@@ -46,7 +47,7 @@ export default function Home() {
               alt="#"
             />
             <div className={styles.about__box}>
-              <div className={styles.about__title}>О нас</div>
+              <h2 className={styles.about__title}>О нас</h2>
               <div className={styles.about__desc}>
                 <span className={styles.about__desc_desk}>
                   Мы — команда профессионалов, готовых помочь вашему бизнесу
@@ -70,7 +71,18 @@ export default function Home() {
       <section className={styles.works}>
         <div className="wrapper">
           <h2 className={styles.works__title}>Наши работы</h2>
-          Нет работ
+          <div className={styles.works__wrapper}>
+            {[1, 2, 3, 4].map((el) => {
+              return (
+                <Work
+                  key={el}
+                  imgUrl={`/works/${el}.jpg`}
+                  title={`Работа ${el}`}
+                  desc={`Описание работы ${el}`}
+                />
+              )
+            })}
+          </div>
         </div>
       </section>
     </>

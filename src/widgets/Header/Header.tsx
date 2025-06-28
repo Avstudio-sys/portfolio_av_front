@@ -36,12 +36,15 @@ export const Header = () => {
             ) : (
               ''
             )}
+          </AnimatePresence>
+          <AnimatePresence>
             {open ? (
               <motion.div
                 key="menu"
                 className={styles.menu}
                 initial={{ x: '100%' }} // Начальное положение (за пределами экрана)
                 animate={{ x: open ? 0 : '100%' }} // Анимация: если open=true, то x=0 (появляется)
+                exit={{ x: '100%' }}
                 transition={{ ease: 'easeInOut', duration: 0.3 }} // Плавная анимация
               >
                 <div className={styles.header__top}>

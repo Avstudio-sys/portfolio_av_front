@@ -4,13 +4,9 @@
   --font-family: 'Raleway', sans-serif;
   --second-family: 'Manrope', sans-serif;
   --third-family: 'Mulish', sans-serif;
-  --color-1: #222831;
-  --color-2: #393e46;
-  --color-3: #3e7afc;
-  --color-4: #eee;
-  --color-5: #fff;
-  --color-6: #0057f4;
-  --color-7: #080808;
+  --color-white: #fff;
+  --color-blue: #0057f4;
+  --color-black: #080808;
 }
 
 * {

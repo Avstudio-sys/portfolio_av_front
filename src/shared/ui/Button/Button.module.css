@@ -4,13 +4,13 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  background: var(--color-6);
-  color: var(--color-5);
+  background: var(--color-blue);
+  color: var(--color-white);
   transition: 0.3s all;
 }
 
 .button:hover {
-  background-color: var(--color-3);
+  opacity: 0.8;
 }
 
 @media screen and (max-width: 1280px) {

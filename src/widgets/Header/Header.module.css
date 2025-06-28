@@ -76,7 +76,7 @@
 }
 
 .menu__elenent-sn:hover path {
-  fill: var(--color-6);
+  fill: var(--color-blue);
 }
 
 .menu__elenent {
@@ -167,7 +167,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    background: var(--color-6);
+    background: var(--color-blue);
     height: 100vh;
     width: 278px;
     padding: 24px;
@@ -199,7 +199,7 @@
   }
 
   .menu__elenent_sn path {
-    fill: var(--color-5);
+    fill: var(--color-white);
   }
   .menu_mobile {
     display: flex;
