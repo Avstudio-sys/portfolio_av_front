@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'Mulish';
+  src: url('/fonts/Mulish/Mulish-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-style: normal;
+}
+
+/*****************************/
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope/Manrope-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 1000; /* Диапазон весов, поддерживаемый шрифтом */
+  font-style: italic;
+}
+
+/******************************/
+
+@font-face {
+  font-family: 'Mulish';
+  src: url('/fonts/Raleway/Raleway-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 1000;
+  font-style: normal;
+}

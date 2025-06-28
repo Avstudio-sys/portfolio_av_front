@@ -1,0 +1,130 @@
+@import './fonts.css';
+
+:root {
+  --font-family: 'Raleway', sans-serif;
+  --second-family: 'Manrope', sans-serif;
+  --third-family: 'Mulish', sans-serif;
+  --color-1: #222831;
+  --color-2: #393e46;
+  --color-3: #3e7afc;
+  --color-4: #eee;
+  --color-5: #fff;
+  --color-6: #0057f4;
+  --color-7: #080808;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  line-height: 1.15;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  display: block;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+}
+
+input,
+textarea,
+select {
+  font: inherit;
+  margin: 0;
+}
+
+input[type='search'] {
+  appearance: none;
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic; /* Для alt текста */
+}
+
+.wrapper {
+  max-width: 1408px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1510px) {
+  .wrapper {
+    max-width: 1140px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .wrapper {
+    max-width: 960px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    max-width: 720px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    max-width: 100%;
+    padding: 0 24px;
+  }
+}

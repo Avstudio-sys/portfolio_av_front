@@ -1,0 +1,27 @@
+.button {
+  border-radius: 48px;
+  padding: 16px;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  background: var(--color-6);
+  color: var(--color-5);
+  transition: 0.3s all;
+}
+
+.button:hover {
+  background-color: var(--color-3);
+}
+
+@media screen and (max-width: 1280px) {
+  .button {
+    padding: 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .button {
+    padding: 10px;
+  }
+}
