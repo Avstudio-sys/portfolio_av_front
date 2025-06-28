@@ -1,7 +1,7 @@
 'use client'
 import React, { useState } from 'react'
 import styles from './Accordion.module.css'
-import { ArrowIcon } from '../IconsComponent/ArrowIcon'
+import { CornerIcon } from '../IconsComponent/CornerIcon'
 import { motion, AnimatePresence } from 'framer-motion'
 
 type propsAccordionT = {
@@ -25,7 +25,7 @@ export const Accordion: React.FC<propsAccordionT> = ({ title, children }) => {
           animate={{ rotate: open ? 180 : 0 }}
           transition={{ duration: 0.3 }}
         >
-          <ArrowIcon />
+          <CornerIcon />
         </motion.div>
       </button>
 

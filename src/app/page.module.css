@@ -177,26 +177,10 @@
   margin-top: 56px;
 }
 
-.works__title {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 48px;
-  text-align: center;
-  color: var(--color-black);
-}
-
 /****************************************/
 
 .services {
   padding: 0 0 224px;
-}
-
-.services__title {
-  font-family: var(--second-family);
-  font-weight: 500;
-  font-size: 48px;
-  text-align: center;
-  color: var(--color-black);
 }
 
 .services__link {
@@ -214,6 +198,17 @@
 
 .services__link {
   margin-top: 8px;
+}
+
+/******************************/
+
+.reviews {
+  overflow: hidden;
+  padding: 0 0 224px;
+}
+
+.reviews__wrapper {
+  margin-top: 56px;
 }
 
 @media screen and (max-width: 1280px) {
@@ -274,10 +269,6 @@
   }
   .about__desc_mobl {
     display: block;
-  }
-  .works__title {
-    font-size: 32px;
-    text-align: left;
   }
   .works__wrapper {
     gap: 56px 56px;

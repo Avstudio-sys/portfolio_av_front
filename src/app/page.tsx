@@ -5,8 +5,67 @@ import { Work } from '@/entities/Work/Work'
 import { Review } from '@/entities/Review/Review'
 import { Accordion } from '@/shared/ui/Accordion/Accordion'
 import Link from 'next/link'
+import { Slider } from '@/shared/ui/Slider/Slider'
 
 export default function Home() {
+  const slides = [
+    <Review
+      key={1}
+      fullname="Алексей Смирнов"
+      func='Основатель "TechSavvy"'
+      text=" Команда профессионалов! Быстро, качественно и в срок. Рекомендуем!"
+    />,
+    <Review
+      key={2}
+      fullname="Мария Петрова"
+      func='Директор компании "ЭкоТревел"'
+      text="Сотрудничество с этой студией стало настоящим открытием! Круто! Иделально! ***************"
+    />,
+    <Review
+      key={3}
+      fullname="Алексей Смирнов"
+      func='Основатель "TechSavvy"'
+      text="Команда профессионалов! Быстро, качественно и в срок. Рекомендуем!"
+    />,
+
+    <Review
+      key={4}
+      fullname="Елена Кузнецова"
+      func='Владелица магазина "Fashion"'
+      text="Ребята полностью поняли наши требования и создали идеальный сайт для нашего бизнеса"
+    />,
+    <Review
+      key={5}
+      fullname="Мария Петрова"
+      func='Директор компании "ЭкоТревел"'
+      text="Сотрудничество с этой студией стало настоящим открытием! Круто! Иделально! ***************"
+    />,
+    <Review
+      key={6}
+      fullname="Елена Кузнецова"
+      func='Владелица магазина "Fashion"'
+      text="Ребята полностью поняли наши требования и создали идеальный сайт для нашего бизнеса"
+    />,
+    <Review
+      key={7}
+      fullname="Мария Петрова"
+      func='Директор компании "ЭкоТревел"'
+      text="Сотрудничество с этой студией стало настоящим открытием! Круто! Иделально! ***************"
+    />,
+    <Review
+      key={8}
+      fullname="Алексей Смирнов"
+      func='Основатель "TechSavvy"'
+      text="Команда профессионалов! Быстро, качественно и в срок. Рекомендуем!"
+    />,
+
+    <Review
+      key={9}
+      fullname="Елена Кузнецова"
+      func='Владелица магазина "Fashion"'
+      text="Ребята полностью поняли наши требования и создали идеальный сайт для нашего бизнеса"
+    />,
+  ]
   return (
     <>
       <section className={styles.promo}>
@@ -73,7 +132,7 @@ export default function Home() {
       </section>
       <section className={styles.works}>
         <div className="wrapper">
-          <h2 className={styles.works__title}>Наши работы</h2>
+          <h2 className={`title`}>Наши работы</h2>
           <div className={styles.works__wrapper}>
             {[1, 2, 3, 4].map((el) => {
               return (
@@ -90,7 +149,7 @@ export default function Home() {
       </section>
       <section className={styles.services}>
         <div className="wrapper">
-          <h2 className={styles.services__title}>Услуги</h2>
+          <h2 className={`title`}>Услуги</h2>
           <Accordion title="Дизайн">
             <div>
               <Link href={''} className={styles.services__link}>
@@ -179,6 +238,14 @@ export default function Home() {
               </Link>
             </div>
           </Accordion>
+        </div>
+      </section>
+      <section className={styles.reviews}>
+        <div className="wrapper">
+          <h3 className={`title`}>Отзывы</h3>
+          <div className={styles.reviews__wrapper}>
+            <Slider slides={slides} />
+          </div>
         </div>
       </section>
     </>

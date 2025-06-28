@@ -1,9 +1,9 @@
 .accordion {
   border-bottom: solid 1px var(--color-black);
-  padding-top: 32px;
 }
 
 .accordion__title {
+  width: 100%;
   font-family: var(--second-family);
   font-weight: 500;
   font-size: 40px;
@@ -12,7 +12,8 @@
   align-items: center;
   gap: 16px;
   transition: 0.3s all;
-  padding-bottom: 32px; /* Переносим padding сюда */
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 
 .accordion__title > div {

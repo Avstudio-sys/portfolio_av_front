@@ -4,6 +4,8 @@
   border-radius: 8px;
   max-height: 200px;
   height: 100%;
+  max-width: 328px;
+  width: 100%;
 }
 
 .review__fullname {
@@ -28,4 +30,10 @@
   line-height: 140%;
   color: var(--color-black);
   margin-top: 25px;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Ограничиваем количество строк */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
