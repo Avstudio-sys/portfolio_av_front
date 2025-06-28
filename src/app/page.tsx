@@ -2,6 +2,9 @@ import Image from 'next/image'
 import styles from './page.module.css'
 import { Button } from '@/shared/ui/Button/Button'
 import { Work } from '@/entities/Work/Work'
+import { Review } from '@/entities/Review/Review'
+import { Accordion } from '@/shared/ui/Accordion/Accordion'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -83,6 +86,99 @@ export default function Home() {
               )
             })}
           </div>
+        </div>
+      </section>
+      <section className={styles.services}>
+        <div className="wrapper">
+          <h2 className={styles.services__title}>Услуги</h2>
+          <Accordion title="Дизайн">
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Веб дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Продуктовый дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Брендинг
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Инфографика
+              </Link>
+            </div>
+          </Accordion>
+          <Accordion title="Программирование">
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Веб дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Продуктовый дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Брендинг
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Инфографика
+              </Link>
+            </div>
+          </Accordion>
+          <Accordion title="SEO">
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Веб дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Продуктовый дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Брендинг
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Инфографика
+              </Link>
+            </div>
+          </Accordion>
+          <Accordion title="SMM">
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Веб дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Продуктовый дизайн
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Брендинг
+              </Link>
+            </div>
+            <div>
+              <Link href={''} className={styles.services__link}>
+                Инфографика
+              </Link>
+            </div>
+          </Accordion>
         </div>
       </section>
     </>

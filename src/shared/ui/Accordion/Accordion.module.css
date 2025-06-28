@@ -1,0 +1,42 @@
+.accordion {
+  border-bottom: solid 1px var(--color-black);
+  padding-top: 32px;
+}
+
+.accordion__title {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 40px;
+  color: var(--color-black);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: 0.3s all;
+  padding-bottom: 32px; /* Переносим padding сюда */
+}
+
+.accordion__title > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion__open {
+  color: var(--color-blue);
+}
+
+.accordion__open path {
+  fill: var(--color-blue);
+}
+
+/* Убираем все margin/padding у content */
+.accordion__content {
+  color: var(--color-blue);
+  overflow: hidden; /* Важно для анимации */
+}
+
+@media screen and (max-width: 768px) {
+  .accordion__title {
+    font-size: 24px;
+  }
+}

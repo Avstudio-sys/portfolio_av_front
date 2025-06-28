@@ -1,0 +1,31 @@
+.review {
+  padding: 24px;
+  border: 1px solid #0057f4;
+  border-radius: 8px;
+  max-height: 200px;
+  height: 100%;
+}
+
+.review__fullname {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 32px;
+  color: var(--color-black);
+}
+
+.review__func {
+  font-family: var(--third-family);
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--color-blue);
+  margin-top: 4px;
+}
+
+.review__text {
+  font-family: var(--third-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--color-black);
+  margin-top: 25px;
+}
