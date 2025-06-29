@@ -36,6 +36,15 @@
   overflow: hidden; /* Важно для анимации */
 }
 
+@media screen and (max-width: 1280px) {
+  .accordion__title {
+    font-size: 24px;
+  }
+  .accordion__content {
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .accordion__title {
     font-size: 24px;

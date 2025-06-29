@@ -247,7 +247,7 @@ export default function Home() {
             <Slider slides={slides} />
           </div>
         </div>
-      </section>
+      </section>{' '}
     </>
   )
 }

@@ -7,6 +7,7 @@
   --color-white: #fff;
   --color-blue: #0057f4;
   --color-black: #080808;
+  --color-silver: #595959;
 }
 
 * {
@@ -80,6 +81,7 @@ textarea,
 select {
   font: inherit;
   margin: 0;
+  outline: none;
 }
 
 input[type='search'] {
@@ -117,6 +119,9 @@ iframe {
 @media screen and (max-width: 1280px) {
   .wrapper {
     max-width: 960px;
+  }
+  .title {
+    font-size: 36px;
   }
 }
 

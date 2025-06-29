@@ -208,21 +208,34 @@
 }
 
 .reviews__wrapper {
+  padding: 0 20px;
   margin-top: 56px;
 }
 
 @media screen and (max-width: 1280px) {
+  .about {
+    padding: 100px 0;
+  }
   .works__wrapper {
     gap: 56px 150px;
   }
   .works {
-    padding-bottom: 150px;
+    padding-bottom: 100px;
   }
   .services {
-    padding: 0 0 150px;
+    padding: 0 0 100px;
+  }
+  .services__link {
+    font-size: 14px;
   }
   .reviews {
     padding: 0 0 150px;
+  }
+  .about__title {
+    font-size: 36px;
+  }
+  .about__desc {
+    font-size: 14px;
   }
 }
 
@@ -288,6 +301,9 @@
   }
   .reviews {
     padding: 0 0 40px;
+  }
+  .reviews__wrapper {
+    padding: 0px;
   }
   .services__title {
     font-size: 32px;

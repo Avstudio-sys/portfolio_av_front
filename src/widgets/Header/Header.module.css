@@ -28,8 +28,9 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: #0000005b;
+  background: var(--color-black);
   z-index: 9;
+  opacity: 0.7;
 }
 
 .menu_mobile {
@@ -71,11 +72,11 @@
   gap: 18px;
 }
 
-.menu__elenent-sn {
+.menu__elenent_sn {
   transition: 0.3s all;
 }
 
-.menu__elenent-sn:hover path {
+.menu__elenent_sn:hover path {
   fill: var(--color-blue);
 }
 
@@ -83,11 +84,12 @@
   font-family: var(--font-family);
   font-weight: 400;
   font-size: 16px;
-  color: #080808;
+  color: var(--color-black);
+  transition: 0.3s all;
 }
 
 .menu__elenent:hover {
-  text-decoration: underline;
+  color: var(--color-blue);
 }
 
 @media screen and (max-width: 1510px) {

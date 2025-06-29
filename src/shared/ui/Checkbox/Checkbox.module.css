@@ -1,0 +1,36 @@
+.checkbox {
+  display: none;
+}
+
+.checkbox__wrapper {
+  user-select: none;
+  cursor: pointer;
+}
+
+.checkbox__custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-white);
+  border-radius: 8px;
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+
+.checkbox__checked {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox:checked ~ .checkbox__custom {
+  background-color: var(--color-white);
+}
+
+@media screen and (max-width: 1280px) {
+  .checkbox__custom {
+    width: 18px;
+    height: 18px;
+    border-radius: 6px;
+  }
+}
