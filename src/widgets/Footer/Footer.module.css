@@ -1,0 +1,126 @@
+.footer {
+  padding: 136px 0 62px;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__menu {
+  display: flex;
+  gap: 48px;
+}
+
+.footer__menu > div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__menu_element {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 24px;
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+.footer__menu_sn {
+  display: flex;
+  gap: 18px;
+}
+
+.footer__menu_element:hover {
+  color: var(--color-blue);
+}
+
+.footer__menu_element_mail {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+.footer__menu_element_mail:hover {
+  color: var(--color-blue);
+  text-decoration: underline;
+}
+
+.footer__menu_element_services {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer__menu_element_service {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--color-black);
+  transition: 0.3s all;
+}
+
+.footer__menu_element_service:hover {
+  color: var(--color-blue);
+}
+
+.footer__menu_element_policy {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: right;
+  color: var(--color-blue);
+}
+
+.footer__botton {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 64px;
+}
+
+@media screen and (max-width: 1280px) {
+  .footer__logo img {
+    width: 150px;
+    height: auto;
+  }
+  .footer__menu {
+    gap: 36px;
+  }
+  .footer__menu_element_mail {
+    font-size: 14px;
+  }
+  .footer__menu_element_service {
+    font-size: 14px;
+  }
+  .footer__menu_element_policy {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .footer__wrapper {
+    gap: 56px;
+  }
+  .footer__menu {
+    flex-wrap: wrap;
+  }
+  .footer__menu_element {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 62px 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer__wrapper {
+    flex-wrap: wrap;
+  }
+}

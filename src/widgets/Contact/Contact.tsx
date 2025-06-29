@@ -51,7 +51,7 @@ export const Contact = () => {
     <section className={styles.contact}>
       <motion.div
         className={`${styles.contact__img_wrapper} ${styles.contact__img_wrapper_desctop}`}
-        initial={{ y: 250 }} // Начальное состояние: прозрачность 0 и смещение на 100px вниз
+        initial={{ y: 220 }} // Начальное состояние: прозрачность 0 и смещение на 100px вниз
         whileInView={{ y: 0 }}
         transition={{
           duration: 0.5,
