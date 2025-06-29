@@ -1,6 +1,5 @@
 import React, { ChangeEvent } from 'react'
 import styles from './Textarea.module.css'
-import { div } from 'motion/react-client'
 
 interface TextareaProps
   extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {

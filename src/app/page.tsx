@@ -83,7 +83,7 @@ export default function Home() {
             <Button className={styles.promo__btn}>Получить консультацию</Button>
           </div>
           <Image
-            src={'/promo/cat_promo.svg'}
+            src={'/cat_black.svg'}
             alt="#"
             width="112"
             height="178"

@@ -6,6 +6,8 @@ import { Textarea } from '@/shared/ui/Textarea/Textarea'
 import { Checkbox } from '@/shared/ui/Checkbox/Checkbox'
 import { Button } from '@/shared/ui/Button/Button'
 import Link from 'next/link'
+import Image from 'next/image'
+import { motion, AnimatePresence } from 'motion/react'
 
 export const Contact = () => {
   const [name, setName] = useState('')
@@ -47,6 +49,41 @@ export const Contact = () => {
 
   return (
     <section className={styles.contact}>
+      <motion.div
+        className={`${styles.contact__img_wrapper} ${styles.contact__img_wrapper_desctop}`}
+        initial={{ y: 250 }} // Начальное состояние: прозрачность 0 и смещение на 100px вниз
+        whileInView={{ y: 0 }}
+        transition={{
+          duration: 0.5,
+        }}
+      >
+        <Image
+          src="/cat_black.svg"
+          width="261"
+          height="421"
+          alt="#"
+          className={styles.contact__img_desctop}
+        />
+      </motion.div>
+      <motion.div
+        className={`${styles.contact__img_wrapper} ${styles.contact__img_small}`}
+        initial={{ y: 194 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: 'spring',
+          stiffness: 50,
+          damping: 15,
+          duration: 1,
+        }}
+      >
+        <Image
+          src="/cat_black.svg"
+          width="174"
+          height="280"
+          alt="#"
+          className={styles.contact__img}
+        />
+      </motion.div>
       <div className="wrapper">
         <h3 className={styles.contact__title}>Получите консультацию!</h3>
         <div className={styles.contact__subtitle}>
