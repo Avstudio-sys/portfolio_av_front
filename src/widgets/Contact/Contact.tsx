@@ -66,7 +66,7 @@ export const Contact = () => {
         />
       </motion.div>
       <motion.div
-        className={`${styles.contact__img_wrapper} ${styles.contact__img_small}`}
+        className={`${styles.contact__img_wrapper} ${styles.contact__img_wrapper_medium}`}
         initial={{ y: 194 }}
         whileInView={{ y: 0 }}
         transition={{
@@ -80,6 +80,25 @@ export const Contact = () => {
           src="/cat_black.svg"
           width="174"
           height="280"
+          alt="#"
+          className={styles.contact__img}
+        />
+      </motion.div>
+      <motion.div
+        className={`${styles.contact__img_wrapper} ${styles.contact__img_wrapper_small}`}
+        initial={{ y: 150 }}
+        whileInView={{ y: 0 }}
+        transition={{
+          type: 'spring',
+          stiffness: 50,
+          damping: 15,
+          duration: 1,
+        }}
+      >
+        <Image
+          src="/cat_black.svg"
+          width="141"
+          height="226"
           alt="#"
           className={styles.contact__img}
         />
