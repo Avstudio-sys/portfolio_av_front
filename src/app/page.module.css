@@ -282,6 +282,9 @@
   .about__corner {
     display: none;
   }
+  .about__wrapper::before {
+    display: none;
+  }
 
   .about__desc_desk {
     display: none;
