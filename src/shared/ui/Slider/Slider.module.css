@@ -58,3 +58,9 @@
     transform: translateY(-50%) translateX(-50%);
   }
 }
+
+@media screen and (max-width: 460px) {
+  .card {
+    max-width: 80%;
+  }
+}

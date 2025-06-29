@@ -53,5 +53,7 @@
   }
   .review__text {
     font-weight: 400;
+    margin-top: 16px;
+    font-size: 14px;
   }
 }
