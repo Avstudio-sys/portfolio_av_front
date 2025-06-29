@@ -17,7 +17,7 @@ export const Header = () => {
       <div className="wrapper">
         <div className={styles.header__wrapper}>
           <div className={styles.header__logo_mobile}>
-            <Image src="/logo.png" alt="A&V" width={55} height={44} />
+            <Image src="/logo.svg" alt="A&V" width={55} height={44} />
           </div>
           <button className={styles.burger_menu} onClick={() => setOpen(true)}>
             <BurgerMenuIcon />
@@ -77,7 +77,7 @@ export const Header = () => {
                     </Link>
                   </nav>
                   <div className={styles.header__logo}>
-                    <Image src="/logo.png" alt="A&V" width={99} height={80} />
+                    <Image src="/logo.svg" alt="A&V" width={99} height={80} />
                   </div>
                   <nav className={styles.sub_menu}>
                     <div>
@@ -128,7 +128,7 @@ export const Header = () => {
                 </Link>
               </nav>
               <div className={styles.header__logo}>
-                <Image src="/logo.png" alt="A&V" width={99} height={80} />
+                <Image src="/logo.svg" alt="A&V" width={99} height={80} />
               </div>
               <nav className={styles.sub_menu}>
                 <div>
