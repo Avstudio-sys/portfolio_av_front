@@ -41,3 +41,20 @@
     display: none;
   }
 }
+
+@media screen and (max-width: 576px) {
+  .slider__wrapper {
+    justify-content: center;
+  }
+  .slider__btn {
+    display: block;
+  }
+
+  .slider__right {
+    transform: translateY(-50%) translateX(50%);
+  }
+
+  .slider__left {
+    transform: translateY(-50%) translateX(-50%);
+  }
+}

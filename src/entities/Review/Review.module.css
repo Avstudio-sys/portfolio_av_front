@@ -37,3 +37,21 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+@media screen and (max-width: 1280px) {
+  .review__fullname {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .review__fullname {
+    font-size: 20px;
+  }
+  .review__func {
+    font-size: 10px;
+  }
+  .review__text {
+    font-weight: 400;
+  }
+}
